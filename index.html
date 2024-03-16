@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptation</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <header>
+                <img class="logoAlura" src="img/Logo.png">
+                <h1 class="tituloEncriptador">Encriptador Challenger One</h1>
+        </header>
+        <main>
+            <div class="left">
+                <input class="text-input" id="inputTexto" type="text" placeholder="ingrese el texto que desee encriptar">
+            </div>
+
+            <div class="right">
+                <img src="img/Munieco.png" id="imgDer">
+                <h1 id="texto">Ningun mensaje fue encontrado</h1>
+                <textarea  name="name" cols="20" rows="10" id="texto2"></textarea>
+                <button id="copiar" type="button" name="button" onclick="copy()" >copiar</button>
+            </div>
+        </main>
+        <footer class="buttons">
+            <div class="botonIzquierda">
+                <p class="aclaracionTexto">Solo minusculas sin acentos</p>
+                <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            </div>
+            <div class="botonDerecha">
+                <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </footer>
+    </body>    
+</html>
